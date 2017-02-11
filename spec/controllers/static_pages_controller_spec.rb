@@ -9,4 +9,11 @@ RSpec.describe StaticPagesController, type: :controller do
     end
   end
 
+  describe "GET #resume" do
+    it 'returns http succes' do
+      get :resume
+      expect(response).to have_http_status(:success)
+    end
+  end
+
 end
