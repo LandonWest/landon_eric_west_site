@@ -1,0 +1,12 @@
+.italic {
+  font-style: italic;
+}
+
+.link-list {
+  list-style: none;
+  padding-left: 0;
+  a {
+    text-decoration: none;
+    &:hover { cursor: pointer; }
+  }
+}

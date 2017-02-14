@@ -1,0 +1,81 @@
+.c-static_pages.a-resume {
+  background-color: lightgrey;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.resume {
+  background-color: #fff;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 10px 10px 25px #888888;
+  color: $charcoal-grey;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  @media all and (min-width: $medium) {
+    margin: 60px auto;
+    padding: 30px 30px;
+    width: 85%;
+  }
+  @media all and (min-width: $large) {
+    width: 75%;
+    padding: 40px 50px;
+  }
+  @media all and (min-width: $xlarge) {
+    width: 60%;
+    padding: 50px 60px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 0.95;
+  margin: 0;
+
+  @media all and (min-width: $medium) {
+    font-size: 3.625rem;
+    margin-right: 20px;
+  }
+  @media all and (min-width: $large) {
+    font-size: 4rem;
+    margin-right: 60px;
+  }
+  @media all and (min-width: $xlarge) {
+    font-size: 4.625rem;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: $medium) {
+    flex-direction: row;
+  }
+}
+
+span {
+  float: right;
+}
+
+a {
+  color: $cool-grey;
+  line-height: 1.33;
+  text-decoration: none;
+  transition: all 0.25s;
+
+  &:hover {
+    color: $charcoal-grey;
+    pointer: cursor;
+  }
+}
+
+.res-links {
+  margin: 12px 20px 0 0;
+
+  &:last-child { margin-right: 0; }
+
+  @media all and (min-width: $large) { margin-right: 36px; }
+  @media all and (min-width: $xlarge) { margin: 14px 36px 0 0; }
+}
