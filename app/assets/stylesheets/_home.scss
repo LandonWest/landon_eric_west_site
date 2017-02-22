@@ -1,0 +1,53 @@
+.hero-banner {
+  background: #67828B image-url('alcatraz') no-repeat 32% center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+
+  @media all and (min-width: $medium) {
+    background-position: 40% center;
+    height: 75vh;
+  }
+  @media all and (min-width: $large) {
+    background-position: 50% center;
+    height: 66vh;
+  }
+  @media all and (min-width: $xlarge) {
+    background-position: 76% center;
+    height: 82vh;
+  }
+}
+
+.hero-headline {
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+
+  h1 {
+    font-size: 25vw;
+    line-height: 0.8;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: serif;
+    letter-spacing: 0.325rem;
+    line-height: 2;
+  }
+
+  @media all and (min-width: $medium) {
+    left: 10%;
+    h1 { font-size: 14vw; }
+  }
+  @media all and (min-width: $large) {
+    left: 6%;
+    h1 { font-size: 9vw; }
+  }
+  @media all and (min-width: $xlarge) {
+    left: 5%;
+    h1 { font-size: 9rem; }
+    h2 { font-size: 2rem; }
+  }
+}
