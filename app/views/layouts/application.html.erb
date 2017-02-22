@@ -9,6 +9,16 @@
   </head>
 
   <body class="c-<%= controller_name %> a-<%= action_name %>" >
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
+
     <%= yield %>
+
+    <script type="text/javascript">
+      setTimeout(function() {
+        $('.notice').fadeOut(3000);
+      }, 2000);
+    </script>
   </body>
 </html>

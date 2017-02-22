@@ -33,7 +33,7 @@
     transition: all ease 70ms;
 
     &.contact-label-active {
-      color: lightblue;
+      color: lightskyblue;
       font-size: 12px;
       top: 0;
     }
@@ -44,7 +44,7 @@
   }
 
   input[type="submit"] {
-    background: lightblue;
+    background: lightskyblue;
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
     border: none;
     color: #fff;
@@ -64,6 +64,8 @@
     font-size: 12px;
     margin-bottom: 16px;
   }
+
+  .highlight { color: lightskyblue; }
 }
 
 .input-group {
@@ -82,5 +84,5 @@
   padding: 16px 0 6px;
   transition: all ease 125ms;
 
-  &:focus { border-color: lightblue; }
+  &:focus { border-color: lightskyblue; }
 }
