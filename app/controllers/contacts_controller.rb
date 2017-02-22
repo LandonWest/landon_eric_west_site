@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
 
   def create
     ContactMailer.send_contact_email(mailer_params).deliver
+    redirect_to(root_path, :notice => 'Your email has been sent')
   end
 
   private

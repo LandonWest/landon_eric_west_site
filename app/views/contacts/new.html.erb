@@ -1,2 +1,48 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+<%= form_tag(contacts_path, method: 'post', id: 'contact-form') do %>
+  <h1>Get In Touch</h1>
+
+  <div class="input-group">
+    <%= label_tag :name, 'Name*' %>
+    <%= text_field_tag :name, nil, class: 'contact-input', required: true %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :email, 'Email*' %>
+    <%= email_field_tag :email, nil, class: 'contact-input', required: true %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :twitter, '@twitter?' %>
+    <%= text_field_tag :twitter, nil, class: 'contact-input' %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :message, "What's on your mind?*" %>
+    <%= text_area_tag :message, nil, class: 'contact-input', size: '12x4', required: true %>
+  </div>
+
+  <span>* indicates required field</span>
+
+  <%= submit_tag 'Send it!', id: 'send-btn' %>
+<% end %>
+
+<div class="env-body">
+  <div class="arrow-down"></div>
+  <div class="arrow-down-inner"></div>
+  <div class="note"></div>
+</div>
+
+<script type="text/javascript">
+  $('.contact-input').on('focus', function() {
+    $(this).prev().removeClass('input-valid').addClass('contact-label-active');
+  });
+
+
+  $('.contact-input').on('blur', function() {
+    if ( $(this).val() === "" ) {
+      $(this).prev().removeClass('contact-label-active input-valid');
+    } else {
+      $(this).prev().addClass('input-valid');
+    }
+  });
+</script>
