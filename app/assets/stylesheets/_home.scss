@@ -39,15 +39,109 @@
 
   @media all and (min-width: $medium) {
     left: 10%;
-    h1 { font-size: 14vw; }
+
+    h1 { font-size: 7rem; }
+
+    h2 {
+      font-size: 1.625rem;
+      letter-spacing: 0.4rem;
+    }
   }
   @media all and (min-width: $large) {
     left: 6%;
-    h1 { font-size: 9vw; }
+
+    h1 { font-size: 6.5rem; }
   }
   @media all and (min-width: $xlarge) {
     left: 5%;
-    h1 { font-size: 9rem; }
-    h2 { font-size: 2rem; }
+
+    h1 { font-size: 8rem; }
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 0.425rem;
+    }
+
   }
+}
+
+.col-2-flex {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: $medium) {
+    flex-direction: row;
+  }
+}
+
+#hl-quote {
+  justify-content: center;
+  padding: 60px 20px;
+
+  .profile-pic {
+    margin: 0 auto;
+
+    img {
+      border-radius: 50%;
+      border: 1px solid lightgrey;
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  @media all and (min-width: $medium) {
+    .profile-pic {
+      order: 1;
+    }
+  }
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+
+  li { padding: 20px; }
+  a { text-decoration: none; }
+}
+
+.flex-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twitter-ribbon {
+  background: #7189A2;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  width: 16rem;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.twitter-ribbon::before, .twitter-ribbon::after {
+  border-top: 9.25rem solid #7189A2;
+  content: '';
+  position: absolute;
+  bottom: -9.25rem;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.twitter-ribbon::before {
+  border-right: 9.25rem solid transparent;
+  left: 0;
+}
+
+.twitter-ribbon::after {
+  border-left: 9.25rem solid transparent;
+  right: 0;
 }
