@@ -1,3 +1,5 @@
+body { background: $light-grey; }
+
 .hero-banner {
   background: #67828B image-url('alcatraz') no-repeat 32% center;
   background-size: cover;
@@ -74,19 +76,32 @@
   }
 }
 
+.flex-article {
+  font-family: serif;
+  flex: 1;
+  line-height: 1.5;
+  margin: 20px;
+  text-align: justify;
+}
+
 #hl-quote {
   justify-content: center;
-  padding: 60px 20px;
+  margin: 60px 20px 20px;
 
   .profile-pic {
     margin: 0 auto;
 
     img {
       border-radius: 50%;
-      border: 1px solid lightgrey;
+      box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.35);
       width: 200px;
       margin: 0 auto;
     }
+  }
+
+  blockquote {
+    color: #404040;
+    font-size: 2rem;
   }
 
   @media all and (min-width: $medium) {
@@ -99,11 +114,11 @@
 .flex-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   padding-left: 0;
 
-  li { padding: 20px; }
+  li { padding: 20px 26px; }
   a { text-decoration: none; }
 }
 
@@ -113,13 +128,18 @@
   align-items: center;
 }
 
+.social-icons {
+  margin: 0 auto 50px;
+  width: 90%;
+
+  a { color: #404040; }
+}
+
 .twitter-ribbon {
   background: #7189A2;
-  display: inline-block;
-  position: relative;
-  float: right;
-  margin: 1.25rem;
+  margin: 1.25rem auto;
   padding: 1.25rem;
+  position: relative;
   width: 16rem;
   height: auto;
   border-top-left-radius: 0.5rem;
