@@ -30,31 +30,31 @@
 <div class="social-icons">
   <ul class="flex-list">
     <li>
-      <a href="" class="flex-icon">
+      <a href="https://github.com/LandonWest" class="flex-icon" target="_blank">
         <i class="fa fa-github fa-4x" aria-hidden="true"></i>
         github
       </a>
     </li>
     <li>
-      <a href="" class="flex-icon">
+      <a href="http://codepen.io/Lando726/" class="flex-icon" target="_blank">
         <i class="fa fa-codepen fa-4x" aria-hidden="true"></i>
         codepen
       </a>
     </li>
     <li>
-      <a href="" class="flex-icon">
+      <a href="https://twitter.com/Lando726" class="flex-icon" target="_blank">
         <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
         twitter
       </a>
     </li>
     <li>
-      <a href="" class="flex-icon">
+      <a href="https://www.instagram.com/landoutwest/" class="flex-icon" target="_blank">
         <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
         instagram
       </a>
     </li>
     <li>
-      <a href="" class="flex-icon">
+      <a href="https://www.linkedin.com/in/landonwest/" class="flex-icon" target="_blank">
         <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
         linkedin
       </a>
@@ -62,15 +62,45 @@
   </ul>
 </div>
 
-<div class="twitter-ribbon">
-  <a class="twitter-timeline"
-    data-height="100%"
-    data-width="100%"
-    data-theme="light"
-    data-tweet-limit="3"
-    data-chrome="nofooter noborders"
-    href="https://twitter.com/Lando726">
-    Tweets by Lando726
-  </a>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<section id="projects">
+  <h2>Recent Projects</h2>
+
+  <div id="proj-prev-propeller" class="proj-prev overlay">
+    <h3>
+      <%= link_to 'Propeller Labs', root_path(anchor: 'proj-propeller')%>
+    </h3>
+  </div>
+
+  <div id="proj-prev-swanson" class="proj-prev overlay">
+    <h3>
+      <%= link_to root_path(anchor: 'proj-swanson') do %>
+        Ron Swanson<br>
+        Quote Generator
+      <% end %>
+    </h3>
+  </div>
+
+  <div id="proj-prev-patchatech" class="proj-prev overlay">
+    <h3>
+      <%= link_to 'Patchatech', root_path(anchor: 'proj-patchatech') %>
+    </h3>
+  </div>
+</section>
+
+<section id="social">
+  <h2>Latest Tweets</h2>
+
+  <div class="twitter-ribbon">
+    <a class="twitter-timeline"
+      data-height="100%"
+      data-width="100%"
+      data-theme="light"
+      data-tweet-limit="3"
+      data-chrome="nofooter noborders"
+      href="https://twitter.com/Lando726">
+      Tweets by Lando726
+    </a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
+</section>

@@ -34,6 +34,7 @@ body { background: $light-grey; }
   }
 
   h2 {
+    color: #fff;
     font-family: serif;
     letter-spacing: 0.325rem;
     line-height: 2;
@@ -129,11 +130,75 @@ body { background: $light-grey; }
 }
 
 .social-icons {
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
   width: 90%;
 
-  a { color: #404040; }
+  a {
+    color: #404040;
+    transition: all 250ms cubic-bezier(0, 0.53, 0.74, 0.54);
+
+    &:hover {
+      color: #7189A2;
+      cursor: pointer;
+    }
+  }
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px 60px;
+
+  h2 { align-self: flex-start; }
+}
+
+.proj-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: 300px;
+  height: 200px;
+
+  a {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.overlay::before {
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  background-color: $charcoal-grey;
+  opacity: 0.75;
+}
+
+#proj-prev-propeller {
+  background: #7189A2 image-url('propeller_home_1_prev') no-repeat center;
+  background-size: cover;
+}
+
+#proj-prev-patchatech {
+  background: #7189A2 image-url('patchatech_home_1_prev') no-repeat center;
+  background-size: cover;
+}
+
+#proj-prev-swanson {
+  background: #7189A2 image-url('swanson_1_prev') no-repeat center;
+  background-size: cover;
+}
+
+#social { margin: 20px; }
 
 .twitter-ribbon {
   background: #7189A2;
