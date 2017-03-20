@@ -1,0 +1,21 @@
+<nav id="topnav">
+  <ul>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Projects', root_path %></li>
+    <li><%= link_to 'Resume', resume_path %></li>
+    <li><%= link_to 'Contact', new_contacts_path %></li>
+  </ul>
+</nav>
+
+<script type="text/javascript">
+  var target = $('.js-scroll-target');
+  var nav = $('#topnav');
+
+  $(window).on('scroll', function() {
+    if ( window.scrollY >= target.outerHeight() ) {
+      nav.addClass('nav-scrolled');
+    } else {
+      nav.removeClass('nav-scrolled');
+    }
+  });
+</script>
