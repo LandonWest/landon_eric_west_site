@@ -106,3 +106,18 @@
   </div>
 
 </section>
+
+<%= render 'layouts/main_footer' %>
+
+<script type="text/javascript">
+  var target = $('.js-scroll-target');
+  var nav = $('#topnav');
+
+  $(window).on('scroll', function() {
+    if ( window.scrollY >= target.outerHeight() ) {
+      nav.addClass('nav-scrolled');
+    } else {
+      nav.removeClass('nav-scrolled');
+    }
+  });
+</script>

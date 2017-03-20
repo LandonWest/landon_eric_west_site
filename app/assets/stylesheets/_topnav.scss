@@ -28,3 +28,40 @@
   z-index: 10;
   opacity: 1 !important;
 }
+
+.c-static_pages.a-resume, .c-contacts.a-new {
+  #topnav {
+    top: 0;
+    opacity: 1;
+    ul { background: transparent; }
+    a { color: $light-grey; }
+  }
+}
+
+.c-static_page.a-resume {
+  #topnav { position: fixed; }
+}
+
+footer {
+  background: $charcoal-grey;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 12px 0;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6px;
+  }
+
+  a {
+    color: $cool-grey;
+  }
+}
