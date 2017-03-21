@@ -1,6 +1,20 @@
 .proj-tile {
   margin: 0 auto;
-  width: 90%;
-  height: 600px;
-  background: lightgrey;
+  width: 96%;
+  // height: auto;
+  // background: lightgrey;
+
+  img {
+    margin-bottom: 24px;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.35);
+  }
 }
+
+.img-desktop { width: 100%; }
+
+.img-mobile {
+  width: 31%;
+  margin-right: 6px;
+}
+
+.img-mobile:last-of-type { margin-right: 0; }
