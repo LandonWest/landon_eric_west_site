@@ -1,82 +1,89 @@
 <%= render 'layouts/topnav' %>
 
-<h1>Projects</h1>
+<div class="page-wrap">
+  <h1>Projects</h1>
 
-<div id="proj-propeller" class="proj-tile">
-  <h2>Propeller Labs</h2>
-  <p>I was contracted by Propeller Labs, a software development studio, to code their redesigned company website. I used Ruby on Rails and deployed to Heroku. The entire site was styled with custom CSS (SCSS) and jQuery for simple animations.</p>
-  <p>Besides the complex, custom layout, some of the more challenging aspects of the project were connecting to different APIs including Meetup.com, Medium.com, and Instagram to retreive and display upcomming meetups, recent blog articles, and latest Instagram pictures.</p>
+  <p class="md-line-space">Here are a few projects I'm proud of. Code is available on <a href="https://github.com/LandonWest" class="p-link-color" target="_blank">GitHub</a>. Please check out my <a href="http://codepen.io/Lando726/" class="p-link-color" target="_blank">CodePen</a> account for more of my front-end UI work.</p>
 
-  <ul>
-    <li>Fully Responsive</li>
-    <li>Ruby on Rails</li>
-    <li>SCSS</li>
-    <li>jQuery</li>
-    <li>APIs</li>
-    <li>GIT</li>
-    <li>Heroku</li>
-  </ul>
+  <div id="proj-propeller" class="proj-tile">
+    <h2>Propeller Labs</h2>
+    <p>I was contracted by Propeller Labs, a software development studio, to code their redesigned company website. I used Ruby on Rails and deployed to Heroku. The entire site was styled with custom CSS (SCSS) and jQuery for simple animations.</p>
+    <p>Besides the complex, custom layout, some of the more challenging aspects of the project were connecting to different APIs including Meetup.com, Medium.com, and Instagram to retreive and display upcomming meetups, recent blog articles, and latest Instagram pictures.</p>
 
-  <%= image_tag('propeller_home_dt.gif', class: 'img-desktop') %>
-  <%= image_tag('propeller_medium_dt.png', class: 'img-desktop') %>
-  <%= image_tag('propeller_ig_dt.png', class: 'img-desktop') %>
+    <ul class="md-line-space">
+      <li>Fully Responsive</li>
+      <li>Ruby on Rails</li>
+      <li>SCSS</li>
+      <li>jQuery</li>
+      <li>APIs</li>
+      <li>GIT</li>
+      <li>Heroku</li>
+    </ul>
 
-  <%= image_tag('propeller_instant_mb.png', class: 'img-mobile') %>
-  <%= image_tag('propeller_menu_mb.png', class: 'img-mobile') %>
-  <%= image_tag('propeller_team_mb.png', class: 'img-mobile') %>
+    <%= image_tag('propeller_home_dt.gif', class: 'img-desktop') %>
+    <%= image_tag('propeller_medium_dt.png', class: 'img-desktop') %>
+    <%= image_tag('propeller_ig_dt.png', class: 'img-desktop') %>
+
+    <%= image_tag('propeller_instant_mb.png', class: 'img-mobile') %>
+    <%= image_tag('propeller_menu_mb.png', class: 'img-mobile') %>
+    <%= image_tag('propeller_team_mb.png', class: 'img-mobile') %>
+  </div>
+
+  <div id="proj-swanson" class="proj-tile">
+    <h2>Ron Swanson Quote Generator</h2>
+
+    <p><a href="http://ronswansonquotes.xyz" class="p-link-color" target="_blank">RonSwansonQuotes.xyz</a></p>
+
+    <p>I created this quote generator web app by pulling from an open source api that serves Ron Swanson quotes. I styled it to be responsive with an emphasis on mobile. It is deployed using GitHub pages. The coolest feature is it allows you to share your favorite quote on Facebook or Twitter!</p>
+
+    <%= image_tag('swanson_1_mb.png', class: 'img-mobile') %>
+    <%= image_tag('swanson_2_mb.png', class: 'img-mobile') %>
+    <%= image_tag('swanson_3_mb.png', class: 'img-mobile') %>
+  </div>
+
+  <div id="proj-weather" class="proj-tile">
+    <h2>Weather App</h2>
+
+    <p>
+      <a href="https://landonwest.github.io/weather-app"  class="p-link-color" target="_blank"> landonwest.github.io/weather-app
+      </a>
+    </p>
+
+    <p>I created this Current Weather web app by pulling a users location using browser geolocation, parsing their city and state, and pulling their current temperature and weather conditions from APIs. Temperature can be displayed in Farenheit or Celcius.</p>
+
+    <%= image_tag('weather_2_mb.png', class: 'img-mobile') %>
+    <%= image_tag('weather_1_mb.png', class: 'img-mobile') %>
+    <%= image_tag('weather_3_mb.jpg', class: 'img-mobile') %>
+  </div>
+
+  <div id="proj-patchatech" class="proj-tile">
+    <h2>patchaTech</h2>
+
+    <p>
+      <a href="http://www.patchatech.com/" class="p-link-color">patchaTech.com</a>
+      <span class="disclaimer">*This project is not actively maintained</span>
+    </p>
+
+    <p>This is my capstone project at DevPoint Labs, a full-time, 14-week, immersive, web development program. I collaborated on all aspects of the project on a team of three people.</p>
+
+    <ul class="md-line-space">
+      <li>Ruby on Rails</li>
+      <li>PostgreSQL</li>
+      <li>Image/Video uploads with CarierWave</li>
+      <li>AWS S3</li>
+      <li>HTML5 Video</li>
+      <li>ElasticSearch</li>
+      <li>User Authentication</li>
+      <li>Foundation responsive front-end framework</li>
+      <li>Heroku</li>
+      <li>Git</li>
+    </ul>
+
+    <%= image_tag('patchatech_home_dt.png', class: 'img-desktop') %>
+    <%= image_tag('patchatech_tutorials_dt.png', class: 'img-desktop') %>
+    <%= image_tag('patchatech_profile_dt.png', class: 'img-desktop') %>
+    <%= image_tag('patchatech_tutorial_create_dt.png', class: 'img-desktop') %>
+
+  </div>
 </div>
-
-<div id="proj-swanson" class="proj-tile">
-  <h2>Ron Swanson Quote Generator</h2>
-
-  <p><a href="http://ronswansonquotes.xyz" target="_blank">http://RonSwansonQuotes.xyz</a></p>
-
-  <p>I created this quote generator web app by pulling from an open source api that serves Ron Swanson quotes. I styled it to be responsive with an emphasis on mobile. It is deployed using GitHub pages. The coolest feature is it allows you to share your favorite quote on Facebook or Twitter!</p>
-
-  <%= image_tag('swanson_1_mb.png', class: 'img-mobile') %>
-  <%= image_tag('swanson_2_mb.png', class: 'img-mobile') %>
-  <%= image_tag('swanson_3_mb.png', class: 'img-mobile') %>
-</div>
-
-<div id="proj-weather" class="proj-tile">
-  <h2>Weather App</h2>
-
-  <p>
-    <a href="https://landonwest.github.io/weather-app" target="_blank">
-      https://landonwest.github.io/weather-app
-    </a>
-  </p>
-
-  <p>I created this Current Weather web app by pulling a users location using browser geolocation, parsing their city and state, and pulling their current temperature and weather conditions from APIs. Temperature can be displayed in Farenheit or Celcius.</p>
-
-  <%= image_tag('weather_2_mb.png', class: 'img-mobile') %>
-  <%= image_tag('weather_1_mb.png', class: 'img-mobile') %>
-  <%= image_tag('weather_3_mb.jpg', class: 'img-mobile') %>
-</div>
-
-<div id="proj-patchatech" class="proj-tile">
-  <h2>Patchatech</h2>
-
-  <p>This is my capstone project at DevPoint Labs, a full-time, 14-week, immersive, web development program. I collaborated on all aspects of the project on a team of three people. *This project is no longer maintained.</p>
-
-  <ul>
-    <li>Ruby on Rails</li>
-    <li>PostgreSQL</li>
-    <li>Image/Video uploads with CarierWave</li>
-    <li>AWS S3</li>
-    <li>HTML5 Video</li>
-    <li>ElasticSearch</li>
-    <li>User Authentication</li>
-    <li>Foundation responsive front-end framework</li>
-    <li>Heroku</li>
-    <li>Git</li>
-  </ul>
-
-  <%= image_tag('patchatech_home_dt.png', class: 'img-desktop') %>
-  <%= image_tag('patchatech_tutorials_dt.png', class: 'img-desktop') %>
-  <%= image_tag('patchatech_profile_dt.png', class: 'img-desktop') %>
-  <%= image_tag('patchatech_tutorial_create_dt.png', class: 'img-desktop') %>
-
-</div>
-
 <%= render 'layouts/main_footer' %>
