@@ -1,3 +1,4 @@
+
 p {  font-family: serif; }
 
 p, blockquote { color: #404040; }
@@ -23,4 +24,19 @@ a { text-decoration: none; }
 
 .italic {
   font-style: italic;
+}
+
+.page-wrap { padding: 0 20px; }
+
+.md-line-space { line-height: 1.5; }
+
+.p-link-color {
+  color: $steel-blue;
+  &:visited { color: $steel-blue; }
+}
+
+.disclaimer {
+  display: block;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem 0;
 }
