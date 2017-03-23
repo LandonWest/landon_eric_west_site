@@ -1,3 +1,4 @@
+html { height: 100%; }
 
 p {  font-family: serif; }
 
@@ -26,7 +27,13 @@ a { text-decoration: none; }
   font-style: italic;
 }
 
-.page-wrap { padding: 0 20px; }
+.page-wrap {
+  padding: 0 20px;
+
+  @media all and (min-width: $medium) {
+    padding: 0 60px;
+  }
+}
 
 .md-line-space { line-height: 1.5; }
 
@@ -38,5 +45,5 @@ a { text-decoration: none; }
 .disclaimer {
   display: block;
   font-size: 0.75rem;
-  padding: 0.25rem 0.5rem 0;
+  padding-top: 0.5rem;
 }

@@ -7,7 +7,13 @@
     a { color: $steel-blue; }
   }
 
-  h1 { margin-top: 60px; }
+  h1 {
+    color: #404040;
+    margin-top: 60px;
+  }
+
+  h2 { margin-bottom: 0; }
+  h2:last-child { margin-bottom: 60px; }
 }
 
 .proj-tile {
@@ -15,6 +21,8 @@
     margin-bottom: 24px;
     box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.35);
   }
+
+  ul { font-family: sans-serif; }
 }
 
 .img-desktop { width: 100%; }
@@ -25,3 +33,10 @@
 }
 
 .img-mobile:last-of-type { margin-right: 0; }
+
+#proj-weather, #proj-swanson {
+  .flex-article {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

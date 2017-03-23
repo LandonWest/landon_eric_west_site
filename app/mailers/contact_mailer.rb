@@ -8,6 +8,6 @@ class ContactMailer < ApplicationMailer
     @message = params[:message]
 
     mail( :to => 'landonewest@gmail.com',
-          :subject => 'New Contact From LandonEricWest.com!' )
+          :subject => "#{@name} has left you a message!" )
   end
 end
