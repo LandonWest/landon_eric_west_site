@@ -1,0 +1,29 @@
+<%= form_tag({controller: 'contacts', action: 'create'}, method: 'post', id: 'contact-form') do %>
+  <h1>Get In Touch</h1>
+
+  <p>I'm always looking for new opportunities to grow. I'd love to hear from you!</p>
+
+  <div class="input-group">
+    <%= label_tag :name, 'Name*' %>
+    <%= text_field_tag :name, nil, class: 'contact-input', required: true %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :email, 'Email*' %>
+    <%= email_field_tag :email, nil, class: 'contact-input', required: true %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :twitter, '@twitter?' %>
+    <%= text_field_tag :twitter, nil, class: 'contact-input' %>
+  </div>
+
+  <div class="input-group">
+    <%= label_tag :message, "What's on your mind?*" %>
+    <%= text_area_tag :message, nil, class: 'contact-input', size: '12x4', required: true %>
+  </div>
+
+  <span>* indicates required field</span>
+
+  <%= submit_tag 'Send it!', id: 'send-btn' %>
+<% end %>

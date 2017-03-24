@@ -12,58 +12,61 @@
 <%= render 'layouts/topnav' %>
 
 <div class="page-wrap">
-  <section id="hl-quote" class="col-2-flex">
-    <div class="profile-pic">
-      <%= image_tag('landon_profile_wh') %>
+  <section id="about">
+    <div class="col-2-flex hl-quote">
+      <div class="profile-pic">
+        <%= image_tag('landon_profile_wh') %>
+      </div>
+
+      <div class="quote-wrap">
+        <blockquote>
+          "Programming is a natural continuation of my life-long love for creating things"
+        </blockquote>
+      </div>
     </div>
 
-    <div class="quote-wrap">
-      <blockquote>
-        "Programming is a natural continuation of my life-long love for creating things"
-      </blockquote>
+    <div class="col-2-flex">
+      <p class="flex-article md-line-space">Hi, I'm Landon West. I have a creative mind and a passion for web development, great design, and user experience. I'm a self-starter who takes pride in producing quality work. I'm hungry for knowledge and eager to advance my skills. I've found that programming is a natural continuation of my life-long love for creating things.</p>
+
+      <p class="flex-article md-line-space">Keeping up on the latest web, mobile, and VR trends drives me. You can find me at one of many San Francisco tech meetups or follow me on Twitter where I post things I find exciting or helpful. Aside from technology, I love the outdoors and have been taking advantage of all the amazing places to hike and explore in the Bay Area. I also really enjoy shooting landscape and architecture photography.</p>
+    </div>
+    
+    <div class="social-icons">
+      <ul class="flex-list">
+        <li>
+          <a href="https://github.com/LandonWest" class="flex-icon" target="_blank">
+            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+            github
+          </a>
+        </li>
+        <li>
+          <a href="http://codepen.io/Lando726/" class="flex-icon" target="_blank">
+            <i class="fa fa-codepen fa-4x" aria-hidden="true"></i>
+            codepen
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Lando726" class="flex-icon" target="_blank">
+            <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+            twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/landoutwest/" class="flex-icon" target="_blank">
+            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/landonwest/" class="flex-icon" target="_blank">
+            <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
+            linkedin
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <div class="col-2-flex">
-    <p class="flex-article md-line-space">Hi, I'm Landon West. I have a creative mind and a passion for web development, great design, and user experience. I'm a self-starter who takes pride in producing quality work. I'm hungry for knowledge and eager to advance my skills. I've found that programming is a natural continuation of my life-long love for creating things.</p>
-
-    <p class="flex-article md-line-space">Keeping up on the latest web, mobile, and VR trends drives me. You can find me at one of many San Francisco tech meetups or follow me on Twitter where I post things I find exciting or helpful. Aside from technology, I love the outdoors and have been taking advantage of all the amazing places to hike and explore in the Bay Area. I also really enjoy shooting landscape and architecture photography.</p>
-  </div>
-
-  <div class="social-icons">
-    <ul class="flex-list">
-      <li>
-        <a href="https://github.com/LandonWest" class="flex-icon" target="_blank">
-          <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-          github
-        </a>
-      </li>
-      <li>
-        <a href="http://codepen.io/Lando726/" class="flex-icon" target="_blank">
-          <i class="fa fa-codepen fa-4x" aria-hidden="true"></i>
-          codepen
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/Lando726" class="flex-icon" target="_blank">
-          <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
-          twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/landoutwest/" class="flex-icon" target="_blank">
-          <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-          instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/landonwest/" class="flex-icon" target="_blank">
-          <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
-          linkedin
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <section id="projects">
     <h2>Recent Projects</h2>
@@ -92,23 +95,31 @@
     </div>
   </section>
 
-  <section id="social">
-    <h2>Latest Tweets</h2>
+  <h2>Latest Tweets</h2>
 
-    <div class="twitter-ribbon">
-      <a class="twitter-timeline"
-        data-height="100%"
-        data-width="100%"
-        data-theme="light"
-        data-tweet-limit="3"
-        data-chrome="nofooter noborders"
-        href="https://twitter.com/Lando726">
-        Tweets by Lando726
-      </a>
+  <div class="col-2-flex contwit">
+    <section id="twitter">
 
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </section>
+      <div class="twitter-ribbon">
+        <a class="twitter-timeline"
+          data-height="100%"
+          data-width="100%"
+          data-theme="light"
+          data-tweet-limit="3"
+          data-chrome="nofooter noborders"
+          href="https://twitter.com/Lando726">
+          Tweets by Lando726
+        </a>
+
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+
+    <section id="contact">
+      <%= render 'layouts/contact_form' %>
+    </section>
+  </div>
+
 </div>
 
 <%= render 'layouts/main_footer' %>

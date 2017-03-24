@@ -1,12 +1,15 @@
 <%= render 'layouts/topnav' %>
 
 <div class="page-wrap">
-  <h1>Projects</h1>
 
-  <p class="md-line-space">
-    Here are a few projects I'm proud of. Code is available on <a href="https://github.com/LandonWest" class="p-link-color" target="_blank">GitHub</a>.
-    Please check out my <a href="http://codepen.io/Lando726/" class="p-link-color" target="_blank">CodePen</a> account for more of my front-end UI work.
-  </p>
+  <div class="page-header">
+    <h1>Projects</h1>
+
+    <p class="md-line-space">
+      Here are a few projects I'm proud of. Code is available on <a href="https://github.com/LandonWest" class="p-link-color" target="_blank">GitHub</a>.
+      Please check out my <a href="http://codepen.io/Lando726/" class="p-link-color" target="_blank">CodePen</a> account for more of my front-end UI work.
+    </p>
+  </div>
 
   <div id="proj-propeller" class="proj-tile">
     <h2>Propeller Labs</h2>
@@ -30,14 +33,36 @@
       </div>
     </div>
 
+    <div class="pic-row">
+      <div class="pic-cont">
+        <div class="propeller-gif img-desktop"></div>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_projects_dt.png') %>
+      </div>
+    </div>
 
-    <%= image_tag('propeller_home_dt.gif', class: 'img-desktop') %>
-    <%= image_tag('propeller_medium_dt.png', class: 'img-desktop') %>
-    <%= image_tag('propeller_ig_dt.png', class: 'img-desktop') %>
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('propeller_medium_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_ig_dt.png') %>
+      </div>
+    </div>
 
-    <%= image_tag('propeller_instant_mb.png', class: 'img-mobile') %>
-    <%= image_tag('propeller_menu_mb.png', class: 'img-mobile') %>
-    <%= image_tag('propeller_team_mb.png', class: 'img-mobile') %>
+
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('propeller_instant_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_menu_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_team_mb.png') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-swanson" class="proj-tile">
@@ -53,9 +78,17 @@
       </div>
     </div>
 
-    <%= image_tag('swanson_1_mb.png', class: 'img-mobile') %>
-    <%= image_tag('swanson_2_mb.png', class: 'img-mobile') %>
-    <%= image_tag('swanson_3_mb.png', class: 'img-mobile') %>
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('swanson_1_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('swanson_2_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('swanson_3_mb.png') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-weather" class="proj-tile">
@@ -72,9 +105,17 @@
       </div>
     </div>
 
-    <%= image_tag('weather_2_mb.png', class: 'img-mobile') %>
-    <%= image_tag('weather_1_mb.png', class: 'img-mobile') %>
-    <%= image_tag('weather_3_mb.jpg', class: 'img-mobile') %>
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('weather_2_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('weather_1_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('weather_3_mb.jpg') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-patchatech" class="proj-tile">
@@ -111,10 +152,23 @@
     </div>
 
 
-    <%= image_tag('patchatech_home_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_tutorials_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_profile_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_tutorial_create_dt.png', class: 'img-desktop') %>
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('patchatech_home_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('patchatech_tutorials_dt.png') %>
+      </div>
+    </div>
+
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('patchatech_profile_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('patchatech_tutorial_create_dt.png') %>
+      </div>
+    </div>
 
   </div>
 
