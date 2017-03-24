@@ -1,44 +1,94 @@
 <%= render 'layouts/topnav' %>
 
 <div class="page-wrap">
-  <h1>Projects</h1>
 
-  <p class="md-line-space">Here are a few projects I'm proud of. Code is available on <a href="https://github.com/LandonWest" class="p-link-color" target="_blank">GitHub</a>. Please check out my <a href="http://codepen.io/Lando726/" class="p-link-color" target="_blank">CodePen</a> account for more of my front-end UI work.</p>
+  <div class="page-header">
+    <h1>Projects</h1>
+
+    <p class="md-line-space">
+      Here are a few projects I'm proud of. Code is available on <a href="https://github.com/LandonWest" class="p-link-color" target="_blank">GitHub</a>.
+      Please check out my <a href="http://codepen.io/Lando726/" class="p-link-color" target="_blank">CodePen</a> account for more of my front-end UI work.
+    </p>
+  </div>
 
   <div id="proj-propeller" class="proj-tile">
     <h2>Propeller Labs</h2>
-    <p>I was contracted by Propeller Labs, a software development studio, to code their redesigned company website. I used Ruby on Rails and deployed to Heroku. The entire site was styled with custom CSS (SCSS) and jQuery for simple animations.</p>
-    <p>Besides the complex, custom layout, some of the more challenging aspects of the project were connecting to different APIs including Meetup.com, Medium.com, and Instagram to retreive and display upcomming meetups, recent blog articles, and latest Instagram pictures.</p>
 
-    <ul class="md-line-space">
-      <li>Fully Responsive</li>
-      <li>Ruby on Rails</li>
-      <li>SCSS</li>
-      <li>jQuery</li>
-      <li>APIs</li>
-      <li>GIT</li>
-      <li>Heroku</li>
-    </ul>
+    <div class="col-2-flex">
+      <div class="flex-article">
+        <p>I was contracted by Propeller Labs, a software development studio, to code their redesigned company website. I used Ruby on Rails and deployed to Heroku. The entire site was styled with custom CSS (SCSS) and jQuery for simple animations.</p>
+        <p>Besides the complex, custom layout, some of the more challenging aspects of the project were connecting to different APIs including Meetup.com, Medium.com, and Instagram to retreive and display upcomming meetups, recent blog articles, and latest Instagram pictures.</p>
+      </div>
 
-    <%= image_tag('propeller_home_dt.gif', class: 'img-desktop') %>
-    <%= image_tag('propeller_medium_dt.png', class: 'img-desktop') %>
-    <%= image_tag('propeller_ig_dt.png', class: 'img-desktop') %>
+      <div class="flex-article">
+        <ul class="md-line-space">
+          <li>Fully Responsive</li>
+          <li>Ruby on Rails</li>
+          <li>SCSS</li>
+          <li>jQuery</li>
+          <li>APIs</li>
+          <li>GIT</li>
+          <li>Heroku</li>
+        </ul>
+      </div>
+    </div>
 
-    <%= image_tag('propeller_instant_mb.png', class: 'img-mobile') %>
-    <%= image_tag('propeller_menu_mb.png', class: 'img-mobile') %>
-    <%= image_tag('propeller_team_mb.png', class: 'img-mobile') %>
+    <div class="pic-row">
+      <div class="pic-cont">
+        <div class="propeller-gif img-desktop"></div>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_projects_dt.png') %>
+      </div>
+    </div>
+
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('propeller_medium_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_ig_dt.png') %>
+      </div>
+    </div>
+
+
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('propeller_instant_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_menu_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('propeller_team_mb.png') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-swanson" class="proj-tile">
     <h2>Ron Swanson Quote Generator</h2>
 
-    <p><a href="http://ronswansonquotes.xyz" class="p-link-color" target="_blank">RonSwansonQuotes.xyz</a></p>
+    <p>
+      <a href="http://ronswansonquotes.xyz" class="p-link-color" target="_blank">RonSwansonQuotes.xyz</a>
+    </p>
 
-    <p>I created this quote generator web app by pulling from an open source api that serves Ron Swanson quotes. I styled it to be responsive with an emphasis on mobile. It is deployed using GitHub pages. The coolest feature is it allows you to share your favorite quote on Facebook or Twitter!</p>
+    <div class="col-2-flex">
+      <div class="flex-article">
+        <p>I created this quote generator web app by pulling from an open source api that serves Ron Swanson quotes. I styled it to be responsive with an emphasis on mobile. It is deployed using GitHub pages. The coolest feature is it allows you to share your favorite quote on Facebook or Twitter!</p>
+      </div>
+    </div>
 
-    <%= image_tag('swanson_1_mb.png', class: 'img-mobile') %>
-    <%= image_tag('swanson_2_mb.png', class: 'img-mobile') %>
-    <%= image_tag('swanson_3_mb.png', class: 'img-mobile') %>
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('swanson_1_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('swanson_2_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('swanson_3_mb.png') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-weather" class="proj-tile">
@@ -49,11 +99,23 @@
       </a>
     </p>
 
-    <p>I created this Current Weather web app by pulling a users location using browser geolocation, parsing their city and state, and pulling their current temperature and weather conditions from APIs. Temperature can be displayed in Farenheit or Celcius.</p>
+    <div class="col-2-flex">
+      <div class="flex-article">
+        <p>I created this Current Weather web app by pulling a users location using browser geolocation, parsing their city and state, and pulling their current temperature and weather conditions from APIs. Temperature can be displayed in Farenheit or Celcius.</p>
+      </div>
+    </div>
 
-    <%= image_tag('weather_2_mb.png', class: 'img-mobile') %>
-    <%= image_tag('weather_1_mb.png', class: 'img-mobile') %>
-    <%= image_tag('weather_3_mb.jpg', class: 'img-mobile') %>
+    <div class="pic-row mb-pic-row">
+      <div class="pic-cont">
+        <%= image_tag('weather_2_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('weather_1_mb.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('weather_3_mb.jpg') %>
+      </div>
+    </div>
   </div>
 
   <div id="proj-patchatech" class="proj-tile">
@@ -61,29 +123,55 @@
 
     <p>
       <a href="http://www.patchatech.com/" class="p-link-color">patchaTech.com</a>
-      <span class="disclaimer">*This project is not actively maintained</span>
     </p>
 
-    <p>This is my capstone project at DevPoint Labs, a full-time, 14-week, immersive, web development program. I collaborated on all aspects of the project on a team of three people.</p>
+    <div class="col-2-flex">
+      <div class="flex-article">
+        <p>This is my capstone project at DevPoint Labs, a full-time, 14-week, immersive, web development program. I collaborated on all aspects of the project on a team of three people.</p>
 
-    <ul class="md-line-space">
-      <li>Ruby on Rails</li>
-      <li>PostgreSQL</li>
-      <li>Image/Video uploads with CarierWave</li>
-      <li>AWS S3</li>
-      <li>HTML5 Video</li>
-      <li>ElasticSearch</li>
-      <li>User Authentication</li>
-      <li>Foundation responsive front-end framework</li>
-      <li>Heroku</li>
-      <li>Git</li>
-    </ul>
+        <p>
+          The site lets you sign up for a free account, search for, view, and rate tutorial videos. You can also upload your own video tutorials.
+          <span class="disclaimer">*This project is no longer actively maintained</span>
+        </p>
+      </div>
 
-    <%= image_tag('patchatech_home_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_tutorials_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_profile_dt.png', class: 'img-desktop') %>
-    <%= image_tag('patchatech_tutorial_create_dt.png', class: 'img-desktop') %>
+      <div class="flex-article">
+        <ul class="md-line-space">
+          <li>Ruby on Rails</li>
+          <li>PostgreSQL</li>
+          <li>Image/Video uploads with CarierWave</li>
+          <li>AWS S3</li>
+          <li>HTML5 Video</li>
+          <li>ElasticSearch</li>
+          <li>User Authentication</li>
+          <li>Foundation responsive front-end framework</li>
+          <li>Heroku</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('patchatech_home_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('patchatech_tutorials_dt.png') %>
+      </div>
+    </div>
+
+    <div class="pic-row">
+      <div class="pic-cont">
+        <%= image_tag('patchatech_profile_dt.png') %>
+      </div>
+      <div class="pic-cont">
+        <%= image_tag('patchatech_tutorial_create_dt.png') %>
+      </div>
+    </div>
 
   </div>
+
+  <h2>Many more to come...</h2>
 </div>
 <%= render 'layouts/main_footer' %>

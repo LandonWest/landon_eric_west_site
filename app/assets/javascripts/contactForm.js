@@ -1,6 +1,6 @@
 $(document).on('turbolinks:load', function() {
   // only run this on the contacts#new view
-  if ( $('.c-contacts, .a-new').length > 0 ) {
+  if ( $('.c-static_pages, .a-home').length > 0 ) {
     $('.contact-input').on('focus', function() {
       $(this).prev().removeClass('input-valid').addClass('contact-label-active');
     });

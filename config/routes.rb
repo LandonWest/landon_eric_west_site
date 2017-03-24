@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get 'resume', to: 'static_pages#resume'
   get 'projects', to: 'static_pages#projects'
 
-  resource :contacts, :path => '/contact', only: [:new, :create]
+  post 'contacts', to: 'contacts#create'
 end

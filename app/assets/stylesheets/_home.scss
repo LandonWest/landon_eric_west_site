@@ -80,16 +80,25 @@ body { background: $light-grey; }
 .flex-article {
   font-family: serif;
   flex: 1;
-  margin: 20px;
   text-align: justify;
+
+  @media all and (min-width: $medium) {
+    &:first-child { margin-right: 10px; }
+    &:last-child { margin-left: 10px; }
+  }
 }
 
-#hl-quote {
+#about {
+  @media all and (min-width: $large) { padding: 0 100px; }
+  @media all and (min-width: $xlarge) { padding: 0 280px; }
+}
+
+.hl-quote {
   justify-content: center;
-  margin: 60px 20px 20px;
+  margin: 60px 0 16px;
 
   .profile-pic {
-    margin: 0 auto;
+    margin: 0 auto 30px;
 
     img {
       border-radius: 50%;
@@ -102,11 +111,27 @@ body { background: $light-grey; }
   blockquote {
     color: #404040;
     font-size: 2rem;
+    margin: 0;
+  }
+
+  .quote-wrap {
+    display: flex;
+    align-items: center;
   }
 
   @media all and (min-width: $medium) {
+    margin-bottom: 0;
+    
+    .quote-wrap { flex: 1; }
+
     .profile-pic {
+      flex: 1;
       order: 1;
+
+      img {
+        margin: 0 25%;
+        width: 224px;
+      }
     }
   }
 }
@@ -120,6 +145,11 @@ body { background: $light-grey; }
 
   li { padding: 20px 26px; }
   a { text-decoration: none; }
+
+  @media all and (min-width: $large) {
+    justify-content: space-around;
+    padding: 0 60px;
+  }
 }
 
 .flex-icon {
@@ -129,8 +159,7 @@ body { background: $light-grey; }
 }
 
 .social-icons {
-  margin: 0 auto 30px;
-  width: 90%;
+  margin: 0 auto 60px;
 
   a {
     color: #404040;
@@ -144,12 +173,23 @@ body { background: $light-grey; }
 }
 
 #projects {
+  margin: 20px 0 60px;
+
+  h2 {
+    align-self: flex-start;
+    margin-bottom: 1.625rem;
+  }
+}
+
+.proj-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 20px 60px;
 
-  h2 { align-self: flex-start; }
+  @media all and (min-width: $medium) { flex-direction: row; }
+  @media all and (min-width: $large) {
+    justify-content: space-between;
+  }
 }
 
 .proj-prev {
@@ -160,7 +200,7 @@ body { background: $light-grey; }
   margin: 10px;
   position: relative;
   width: 300px;
-  height: 200px;
+  height: 300px;
 
   a {
     color: #fff;
@@ -169,6 +209,8 @@ body { background: $light-grey; }
     text-align: center;
     text-decoration: none;
   }
+
+  @media all and (min-width: $large) { flex: 1; }
 }
 
 .overlay::before {
@@ -198,17 +240,19 @@ body { background: $light-grey; }
   background-size: cover;
 }
 
-#social { margin: 20px; }
+#twitter { }
 
 .twitter-ribbon {
   background: #7189A2;
-  margin: 1.25rem auto 14rem;
+  margin: 2.25rem auto 10rem;
   padding: 1.25rem;
   position: relative;
   width: 16rem;
   height: auto;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+
+  @media all and (min-width: $medium) { margin: 2.25rem 0 12rem; }
 }
 
 .twitter-ribbon::before, .twitter-ribbon::after {

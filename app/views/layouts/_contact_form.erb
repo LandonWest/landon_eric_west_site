@@ -1,10 +1,7 @@
-<%= render 'layouts/topnav' %>
-
-<div class="page-wrap">
-  <p class="md-line-space">I'm always looking for opportunities to grow. I'd love to hear from you!</p>
-
-  <%= form_tag(contacts_path, method: 'post', id: 'contact-form') do %>
+<%= form_tag({controller: 'contacts', action: 'create'}, method: 'post', id: 'contact-form') do %>
   <h1>Get In Touch</h1>
+
+  <p>I'm always looking for new opportunities to grow. I'd love to hear from you!</p>
 
   <div class="input-group">
     <%= label_tag :name, 'Name*' %>
@@ -29,13 +26,4 @@
   <span>* indicates required field</span>
 
   <%= submit_tag 'Send it!', id: 'send-btn' %>
-  <% end %>
-
-  <div class="env-body">
-    <div class="arrow-down"></div>
-    <div class="arrow-down-inner"></div>
-    <div class="note"></div>
-  </div>
-</div>
-
-<%= render 'layouts/main_footer' %>
+<% end %>
