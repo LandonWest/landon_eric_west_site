@@ -20,7 +20,7 @@ body { background: $light-grey; }
     height: 82vh;
   }
 
-  @media all and (orientation: landscape) {
+  @media all and (orientation: landscape) and (max-width: 767px) {
     height: 100vh;
   }
 }
@@ -69,7 +69,7 @@ body { background: $light-grey; }
       letter-spacing: 0.425rem;
     }
   }
-  @media all and (orientation: landscape) {
+  @media all and (orientation: landscape) and (max-width: 767px) {
     h1 { font-size: 10vw; }
     h2 { font-size: 1.25rem; }
   }
@@ -253,7 +253,10 @@ body { background: $light-grey; }
   background-size: cover;
 }
 
-#twitter { }
+#twitter-cont {
+  margin-bottom: 30px;
+  min-height: 820px;
+}
 
 .twitter-ribbon {
   background: #7189A2;
