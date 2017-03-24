@@ -30,7 +30,7 @@
 
       <p class="flex-article md-line-space">Keeping up on the latest web, mobile, and VR trends drives me. You can find me at one of many San Francisco tech meetups or follow me on Twitter where I post things I find exciting or helpful. Aside from technology, I love the outdoors and have been taking advantage of all the amazing places to hike and explore in the Bay Area. I also really enjoy shooting landscape and architecture photography.</p>
     </div>
-    
+
     <div class="social-icons">
       <ul class="flex-list">
         <li>
@@ -67,30 +67,29 @@
     </div>
   </section>
 
-
   <section id="projects">
     <h2>Recent Projects</h2>
 
     <div class="proj-wrap">
       <div id="proj-prev-propeller" class="proj-prev overlay">
-        <h3>
+        <h2>
           <%= link_to 'Propeller Labs', projects_path(anchor: 'proj-propeller')%>
-        </h3>
+        </h2>
       </div>
 
       <div id="proj-prev-swanson" class="proj-prev overlay">
-        <h3>
+        <h2>
           <%= link_to projects_path(anchor: 'proj-swanson') do %>
           Ron Swanson<br>
           Quote Generator
           <% end %>
-        </h3>
+        </h2>
       </div>
 
       <div id="proj-prev-patchatech" class="proj-prev overlay">
-        <h3>
-          <%= link_to 'Patchatech', projects_path(anchor: 'proj-patchatech') %>
-        </h3>
+        <h2>
+          <%= link_to 'PatchaTech', projects_path(anchor: 'proj-patchatech') %>
+        </h2>
       </div>
     </div>
   </section>
@@ -99,7 +98,6 @@
 
   <div class="col-2-flex contwit">
     <section id="twitter">
-
       <div class="twitter-ribbon">
         <a class="twitter-timeline"
           data-height="100%"
@@ -119,7 +117,6 @@
       <%= render 'layouts/contact_form' %>
     </section>
   </div>
-
 </div>
 
 <%= render 'layouts/main_footer' %>

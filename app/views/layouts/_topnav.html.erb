@@ -1,8 +1,8 @@
 <nav id="topnav">
   <ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <li><%= link_to 'Projects', projects_path %></li>
-    <li><%= link_to 'Resume', resume_path %></li>
-    <li><%= link_to 'Contact', root_path(anchor: 'contact') %></li>
+    <li><%= link_to 'Home', root_path, class: 'up' %></li>
+    <li><%= link_to 'Projects', projects_path, class: 'up' %></li>
+    <li><%= link_to 'Resume', resume_path, class: 'up' %></li>
+    <li><%= link_to 'Contact', root_path(anchor: 'contact'), class: 'up' %></li>
   </ul>
 </nav>

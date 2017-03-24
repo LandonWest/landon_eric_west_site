@@ -48,7 +48,7 @@ footer {
 
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 12px 0;
@@ -66,8 +66,15 @@ footer {
   }
 
   @media all and (min-width: $medium) {
-    ul {
-      padding: 12px 60px;
-    }
+    ul { padding: 24px 0; }
+    li { padding: 0 12px; }
+  }
+  @media all and (min-width: $large) {
+    ul { padding: 24px 0; }
+    li { padding: 0 24px; }
+  }
+  @media all and (min-width: $xlarge) {
+    ul { padding: 24px 0; }
+    li { padding: 0 40px; }
   }
 }

@@ -8,6 +8,12 @@ h2 { color: #404040; }
 
 a { text-decoration: none; }
 
+@media all and (min-width: $large) {
+  p { font-size: 1.25rem; }
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.75rem; }
+}
+
 .notice {
   background: $sky-blue;
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.25);
@@ -24,9 +30,9 @@ a { text-decoration: none; }
   z-index: 5;
 }
 
-.italic {
-  font-style: italic;
-}
+.italic { font-style: italic; }
+
+.up { text-transform: uppercase; }
 
 .page-wrap {
   padding: 0 20px;

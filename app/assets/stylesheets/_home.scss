@@ -121,7 +121,7 @@ body { background: $light-grey; }
 
   @media all and (min-width: $medium) {
     margin-bottom: 0;
-    
+
     .quote-wrap { flex: 1; }
 
     .profile-pic {
@@ -175,10 +175,7 @@ body { background: $light-grey; }
 #projects {
   margin: 20px 0 60px;
 
-  h2 {
-    align-self: flex-start;
-    margin-bottom: 1.625rem;
-  }
+  h2 { align-self: center; }
 }
 
 .proj-wrap {
@@ -210,7 +207,11 @@ body { background: $light-grey; }
     text-decoration: none;
   }
 
-  @media all and (min-width: $large) { flex: 1; }
+  @media all and (min-width: $large) {
+    flex: 1;
+    height: 324px;
+  }
+  @media all and (min-width: $xlarge) { height: 360px; }
 }
 
 .overlay::before {
@@ -253,6 +254,11 @@ body { background: $light-grey; }
   border-top-right-radius: 0.5rem;
 
   @media all and (min-width: $medium) { margin: 2.25rem 0 12rem; }
+  @media all and (min-width: $large) {
+    padding: 2.25rem;
+    width: 20rem;
+  }
+  @media all and (min-width: $xlarge) { width: 28rem; }
 }
 
 .twitter-ribbon::before, .twitter-ribbon::after {
@@ -268,9 +274,33 @@ body { background: $light-grey; }
 .twitter-ribbon::before {
   border-right: 9.25rem solid transparent;
   left: 0;
+
+  @media all and (min-width: $large) {
+    border-right: 12.25rem solid transparent;
+  }
 }
 
 .twitter-ribbon::after {
   border-left: 9.25rem solid transparent;
   right: 0;
+}
+
+@media all and (min-width: $large) {
+  .twitter-ribbon::before {
+    border-right: 12.25rem solid transparent;
+  }
+
+  .twitter-ribbon::after {
+    border-left: 12.25rem solid transparent;
+  }
+}
+
+@media all and (min-width: $xlarge) {
+  .twitter-ribbon::before {
+    border-right: 16.25rem solid transparent;
+  }
+
+  .twitter-ribbon::after {
+    border-left: 16.25rem solid transparent;
+  }
 }

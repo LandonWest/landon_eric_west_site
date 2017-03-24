@@ -7,8 +7,9 @@
     a { color: $steel-blue; }
   }
 
-  h2 { margin-bottom: 0; }
-  h2:last-child { margin-bottom: 60px; }
+  h2 { margin-bottom: 4px; }
+
+  h2:last-child { margin-bottom: 20px; }
 
   @media all and (min-width: $large) {
     margin-top: 100px;
@@ -30,8 +31,11 @@
 }
 
 .proj-tile {
+  margin-bottom: 60px;
+
   ul {
     font-family: sans-serif;
+    margin-bottom: 40px;
     text-align: left;
   }
 }
